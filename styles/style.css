@@ -1,13 +1,15 @@
 .page {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 18px;
+  font-family: var(--font);
+  font-size: var(--main-font-size);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  min-block-size: 100vh;
 }
 
 /* header */
 
 .header {
-  background-image: url(/images/cover-image-dark.png);
-  background-position: center;
   min-block-size: 100vh;
 }
 
@@ -39,9 +41,10 @@
   position: absolute;
   top: 10px;
   right: 19px;
-  gap: 10px;
+  gap: var(--small-gap);
   color: var(--accent-color);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .header__rec::after {
@@ -60,7 +63,7 @@
   justify-content: end;
   padding-top: 75px;
   padding-right: 10px;
-  gap: 10px;
+  gap: var(--small-gap);
 }
 
 .header__theme-menu-button {
@@ -68,6 +71,18 @@
   border: none;
   color: var(--accent-color);
   text-transform: lowercase;
+  font-weight: 400;
+  width: 70px;
+  height: 26px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--border-button);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button_active {
@@ -80,7 +95,7 @@
   line-height: 83%;
   color: var(--header-title-color);
   padding: 65px 10px 55px;
-  text-shadow: 4px 4px 0 var(--accent-color);;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__description {
@@ -100,4 +115,46 @@
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+}
+
+/* main */
+
+.main {
+  display: grid;
+  gap: var(--large-gap);
+  margin: 40px 10px;
+}
+
+.main__section {
+  display: grid;
+  gap: var(--medium-gap);
+}
+
+.main__title {
+  font-weight: 700;
+  line-height: 23.4px;
+  color: var(--accent-color);
+}
+
+.main__subtitle {
+  margin-bottom: 10px;
+}
+
+.main__text {
+  line-height: 23.4px;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.main__link {
+  text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+.main__link:hover {
+  text-decoration: underline;
+}
+
+.main__link:focus {
+  outline: none;
+  border: 1px solid var(--main-text-color);
 }

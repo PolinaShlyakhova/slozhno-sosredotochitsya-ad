@@ -1,5 +1,16 @@
 :root {
   --accent-color: #FF0070;
+  --border-button: rgba(255, 0, 112, 0.4);
   --header-title-color: #DB00FF;
   --header-description-color: #000028;
+  --main-text-color: #F1B2CE;
+
+  --bg-image: url(/images/cover-image-dark.png);
+
+  --font: 'IBM Plex Mono', monospace;
+
+  --main-font-size: 18px;
+  --small-gap: 10px;
+  --medium-gap: 20px;
+  --large-gap: 50px;
 }
