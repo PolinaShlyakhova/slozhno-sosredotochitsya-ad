@@ -158,3 +158,52 @@
   outline: none;
   border: 1px solid var(--main-text-color);
 }
+
+/* gallery */
+
+.gallery {
+  display: grid;
+  gap: var(--small-gap);
+  grid-template-columns: 1fr;
+}
+
+.gallery__photo {
+  width: 100%;
+}
+
+/* gallery для width >= 768px*/
+
+@media (width >= 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery__photo-sunset {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .gallery__photo-ice-cream {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__photo-tape {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__photo-books {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .gallery__photo-street {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
