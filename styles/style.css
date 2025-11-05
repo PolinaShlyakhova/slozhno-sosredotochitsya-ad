@@ -87,6 +87,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -157,7 +158,7 @@
   .header__description {
     width: 50%;
     margin-left: auto;
-    margin-top: 517px;
+    margin-top: 434px;
   }
 
   .header__theme-menu-list {
