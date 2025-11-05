@@ -1,7 +1,7 @@
 .page {
   font-family: var(--font);
   font-size: var(--main-font-size);
-  background-image: var(--bg-image), url('../images/cover-image-dark.png');
+  background-image: var(--bg-image);
   background-attachment: fixed;
   background-position: center;
 }
