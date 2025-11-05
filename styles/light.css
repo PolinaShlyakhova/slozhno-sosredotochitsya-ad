@@ -5,7 +5,7 @@
   --header-description-color: #353430;
   --main-text-color: #353430;
 
-  --bg-image: url(/images/cover-image-light.png);
+  --bg-image: url('../images/cover-image-light.png');
 
   --font: 'IBM Plex Mono', monospace;
 
@@ -25,7 +25,7 @@
     --header-description-color: #353430;
     --main-text-color: #353430;
   
-    --bg-image: url(/images/cover-image-light.png);
+    --bg-image: url('../images/cover-image-light.png');
 
     --font: 'IBM Plex Mono', monospace;
   
