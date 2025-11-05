@@ -2,8 +2,8 @@
   font-family: var(--font);
   font-size: var(--main-font-size);
   background-image: var(--bg-image), url('../images/cover-image-dark.png');
+  background-attachment: fixed;
   background-position: center;
-  background-attachment: fixed, fixed;
 }
 
 /* header */
